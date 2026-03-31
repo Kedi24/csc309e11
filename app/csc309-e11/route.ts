@@ -3,10 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
     const html = `
-        <div id="auto-tester">
-            Hi. I m ${getUTorId()}, and I have learned how to develop a full-stack web app
-            and deploy it!
-        </div>
+        <div id="auto-tester">Hi. I am ${getUTorId()}, and I have learned how to develop a full-stack web app and deploy it!</div>
     `;
     return new NextResponse(html, {
         status: 200,
